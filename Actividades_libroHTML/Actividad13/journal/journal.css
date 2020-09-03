@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "Emblema One";
+	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), 
+	     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"); 
+}
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       small;
+}
+h1, h2 {
+  color:           #cc6600;
+  border-bottom:   thin dotted #888888;
+}
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+h2 {
+  font-size:       130%;
+  font-weight:     normal;
+}
+blockquote {
+  font-style:      italic;
+}
+
+/*añadimos estilo a la lista que se ubica al fondo de la pagina*/
+li {
+  list-style-image: url(images/backpack.gif); /*se coloca como estilo de cada numerador de lista una imagen*/
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+/*añadimos estilo a la tabla*/
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse; /*añadimos este estilo para unir los bordes de cada celda en la tabla*/
+}
+
+/*añadimos color blanco al fondo de los th que se encuentran en la tabla ubicada dentro de la celda de la tabla grande*/
+table table th {
+  background-color: white;
+}
+
+td, th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+
+th {
+  background-color: #cc6600;
+}
+
+/*tr:nth-child(odd) { /*con esto añadimos color de fondo a las filas impares excepto la fila de th
+  background-color: #fcba7a;
+}*/
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.cellcolor {
+  background-color: #fcba7a;
+}
+

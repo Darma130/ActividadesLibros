@@ -1,0 +1,108 @@
+body {
+  font-size:           small;
+  font-family:         Verdana, Helvetica, Arial, sans-serif;
+  line-height:         1.6em;
+}
+
+h1, h2 {
+  color:               #007e7e;
+}
+
+h1 {
+  font-size:           150%;
+}
+
+h2 {
+  font-size:           130%;
+}
+
+#guarantee {
+  line-height:         1.9em;
+  font-style:          italic;
+  font-family:         Georgia, "Times New Roman", Times, serif;
+  color:               #444444;
+  border-color:        white;
+  border-width:        1px;
+  border-style:        dashed;
+  background-color:    #a7cece;
+  padding:             25px;
+  padding-left:        80px;
+  margin:              30px;
+  margin-right:        250px;
+  background-image:    url("images/background.gif");
+  background-repeat:   no-repeat;
+  background-position: top left;
+}
+
+/*añadimos estilos al div con id elixirs*/
+#elixirs {
+  border-width: thin;
+  border-style: solid;
+  border-color: #007e7e;
+  width: 200px; /*esto determina el ancho del elemento sin incluir padding ni border ni margin*/
+
+  /*añadimos padding al elemento*/
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  margin-left: 20px; /*añadimos margen a la izquierda*/
+
+  text-align: center; /*alienamos texto al centro*/
+  line-height: 1;
+
+  background-image: url(images/cocktail.gif); /*añadimos imagen de fondo al elemento*/
+  background-repeat: repeat-x; /*indicamos que la imagen unicamente se repita en el eje x*/ 
+  
+  float: right; /*añadimos esto para que el elemento sea flotante y se ubique a la derecha de la pantalla*/
+}
+
+/*añadimos color a dos elementos especificos que estan dentro del div con id #elixirs*/
+#elixirs h2 {
+  color: black;
+}
+
+#elixirs h3 {
+  color: #d12c47;
+}
+
+#elixirs a:link {
+  color: #007e7e;
+}
+#elixirs a:visited {
+  color: #333333;
+}
+#elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
+
+/*añadimos estilo al ultimo parrafo, footer*/
+#footer {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+/*añadimos estilo de fuente a las clases creadas para los elementos span*/
+.cd {
+  font-style: italic;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+/*añadimos estilo al elemento "a" a partir de sus estados*/
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: yellow;
+}

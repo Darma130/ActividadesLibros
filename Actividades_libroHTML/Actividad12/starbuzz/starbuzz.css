@@ -1,0 +1,110 @@
+body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+
+header.top { /*usamos el nuevo elemento header para añadir estilo junto con la class top*/
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px; /*añadimos margen de 10 px en todos los lados de header excepto en bottom*/
+  height:           108px;
+}
+
+header.top img#headerSlogan {
+  float: right;
+}
+
+div#tableContainer {
+  display: table; /*añadimos una tabla dentro del contenedor principal en donde se almacenan el contenedos de los dos elementos (main y sidebar*/
+  border-spacing: 10px; /*añadimos espacio de separacion entre celdas de 10px*/
+}
+
+div#tableRow {
+  display: table-row; /*con esto estamos indicando que este contenedor es la primera fila de la tabla*/
+}
+
+/*añadimos estilo a la nueva celda de la tabla*/
+/*usamos el elemento section con cada id para añadir estilo*/
+section#drinks {
+  display:          table-cell;
+  background-color: #efe5d0;
+  width:            20%;
+  padding:          15px;
+  vertical-align:    top;
+}
+
+section#main, section#blog { /*Añadimos el mismo estilo a la seccion blog*/
+  display:          table-cell; /*indicamos que esta es una selda de la tabla*/
+  background:       #efe5d0 url(images/background.gif) top left;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align:   top; /*añadimos alineacion vertical desde la parte superior*/
+}
+
+aside { /*usamos el nuevo elemento aside para añadir los estilos*/
+  display:          table-cell; /*indicamos que esta es una selda de la tabla*/
+  background:       #efe5d0 url(images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align:   top; /*añadimos alineacion vertical desde la parte superior*/
+}
+
+footer { /*usamos el nuevo elemento footer para añadir los estilos */
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           0px 10px 10px 10px; /*añadimos margen en todas las partes de footer excepto en top*/ 
+  font-size:        90%;
+}
+
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}
+
+/*añadimos estilo a la barra de navegacion*/
+nav {
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+nav ul li.selected {
+  background-color: #c8b99c;
+}

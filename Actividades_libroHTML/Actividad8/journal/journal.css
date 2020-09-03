@@ -1,0 +1,37 @@
+/*añadimos tipo de letra descargado de internet*/
+@font-face {
+    font-family: "Emblema One";
+    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
+    url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff");
+}
+
+/*añadimos tipo de fuente al body*/
+/*incrementamos el tamaño de la fuente*/
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+}
+
+/*aplicamos mismo color y decoracion de texto a h1 y h2*/
+h1, h2 {
+    color: #cc6600;
+    border-bottom: thin dotted #888888;
+    /*text-decoration: underline;*/
+}
+
+/*Aplicamos el tipo de letra añadido al elemento h1*/
+h1 {
+    font-family: "Emblema One", sans-serif;
+    font-size: 220%;
+}
+
+/*Aplicamos weight normal a la letra de h2*/
+h2 {
+    font-size: 130%;
+    font-weight: normal;
+}
+
+/*Aplicamos estilo de fuente italic al bloque "cita"*/ 
+blockquote {
+    font-style: italic;
+}

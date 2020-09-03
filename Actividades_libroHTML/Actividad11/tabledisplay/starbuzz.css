@@ -1,0 +1,100 @@
+body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+
+/*añadimos estilo al contenedor coupon para ubicarlo en una parte especifica*/
+#coupon {
+  position:         fixed;
+  top:              350px;
+  left:             -90px; /*hacemos que la imagen quede cortada una parte hacia la izquierda*/
+}
+
+#coupon a, img {
+  border: none;
+}
+
+/*añadimos estilo al award para ubicarlo donde se desea*/
+#award {
+  position:         absolute;
+  top:              30px;
+  left:             365px;
+}
+
+#header {
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px; /*añadimos margen de 10 px en todos los lados de header excepto en bottom*/
+  height:           108px;
+}
+
+#headerSlogan {
+  float: right;
+}
+
+div#tableContainer {
+  display: table; /*añadimos una tabla dentro del contenedor principal en donde se almacenan el contenedos de los dos elementos (main y sidebar*/
+  border-spacing: 10px; /*añadimos espacio de separacion entre celdas de 10px*/
+}
+
+div#tableRow {
+  display: table-row; /*con esto estamos indicando que este contenedor es la primera fila de la tabla*/
+}
+
+/*añadimos estilo a la nueva celda de la tabla*/
+#drinks {
+  display:          table-cell;
+  background-color: #efe5d0;
+  width:            20%;
+  padding:          15px;
+  vertical-align:    top;
+}
+
+#main {
+  display:          table-cell; /*indicamos que esta es una selda de la tabla*/
+  background:       #efe5d0 url(images/background.gif) top left;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align:   top; /*añadimos alineacion vertical desde la parte superior*/
+}
+
+#sidebar {
+  display:          table-cell; /*indicamos que esta es una selda de la tabla*/
+  background:       #efe5d0 url(images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+  vertical-align:   top; /*añadimos alineacion vertical desde la parte superior*/
+}
+
+#footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           0px 10px 10px 10px; /*añadimos margen en todas las partes de footer excepto en top*/ 
+  font-size:        90%;
+}
+
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}

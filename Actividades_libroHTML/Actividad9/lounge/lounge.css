@@ -1,0 +1,38 @@
+/*añadimos estilo a algunos elementos iniciales*/
+body {
+    font-size: small;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+}
+
+h1, h2 {
+    color: #007e7e;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+/*añadimos el estilo deseado a esta clase que pertenece a un elemento "p"*/
+/*por ahora el estilo se añade a un id*/
+#guarantee {
+    line-height: 1.9em;
+    font-style: italic;
+    color: #444444;
+    font-family: Georgia, 'Times New Roman', Times, serif; /*hasta aqui son estilos propuestos en el ejercicio*/
+    border-color: white;
+    border-width: 1px;
+    border-style: dashed;
+    background-color: #a7cece;
+    padding: 25px; /*padding de 25px por todos los lados*/
+    padding-left: 80px; /*añadimos mas padding a la izquierda*/
+    margin: 30px; /*margen de 30px por todos los lados*/
+    margin-right: 250px; /*añadimos mas margen a la derecha*/
+    background-image: url(images/background.gif); /*añadimos una imagen de fondo para este elemento*/
+    background-repeat: no-repeat; /*la imagen no se repite dentro del elemento*/
+    background-position: top left; /*la imagen se ubica en la parte superior izquierda*/
+}
