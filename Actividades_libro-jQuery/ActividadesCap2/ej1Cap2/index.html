@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Jump for Joy</title> 
+		<link href="styles/my_style.css" rel="stylesheet">
+	</head> 
+	<body> 
+        <!--añadimos id header para este elemento div-->
+		<div id="header">
+			<h2>Jump for Joy Sale</h2>
+        </div>
+        <!--añadimos id main para este elemento div-->
+		<div id="main">
+			<div class=guess_box><img src="images/jump1.jpg"/></div>
+			<div class=guess_box><img src="images/jump2.jpg"/></div>
+			<div class=guess_box><img src="images/jump3.jpg"/></div>
+			<div class=guess_box><img src="images/jump4.jpg"/></div>
+        </div>
+        <!--incluimos la libreria de jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+            $(document).ready(function() {
+                $(".guess_box").click(function() {
+
+                    $(".guess_box p").remove(); //borramos el elemento p que previamente se pudo haber generado al hacer click
+                    //generamos un numero aleatorio entre 5 y 10 e imprimimos el valor generado en una alert
+                    var discount = Math.floor((Math.random()*5) + 5);
+                    var discount_msg = "<p>Your Discount is "+ discount + "%</p>";
+                    alert(discount_msg);
+                    //$(".guess_box").append(discount_msg); //imprimimos el mensaje en cada div
+                    
+                    $(this).append(discount_msg); //usamos this para identificar el elemento especifico que generó el evento de click en este caso
+                }); //fin de la funcion de click
+            });//fin de la funcion que hace clickeables los divs
+		</script>
+	</body>
+</html>

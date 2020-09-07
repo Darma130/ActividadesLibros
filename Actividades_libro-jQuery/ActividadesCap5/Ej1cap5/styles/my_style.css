@@ -1,0 +1,80 @@
+#container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.lightning {
+    display: none; /*por ahora no queremos que las imagenes de esta clase sean visibles*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+p {
+    color: #33ff66;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#top {
+	position:absolute;
+	left:191px;
+	top:15px;
+	z-index: 4;
+}
+
+#text_top {
+    position: relative;
+    z-index: 4;
+}
+
+#frame {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 545px;
+    height: 629px;
+    background-image: url(../images/frame.png);
+    z-index: 2;
+    overflow: hidden; /*esto se hace para evitar que el sobrante de la imagen se vea en pantalla
+    (cosa que sucede cuando la imagen es mas grande que el div en donde se encuentra contenida la imagen)*/
+}
+
+#pic_box {
+    position: relative;
+    left: 91px;
+    top: 84px;
+    width: 367px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.face {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#head {
+    height: 172px;
+}
+
+#eyes {
+    height: 79px;
+}
+
+#nose {
+    height: 86px;
+}
+
+#mouth {
+    height: 117px;
+}

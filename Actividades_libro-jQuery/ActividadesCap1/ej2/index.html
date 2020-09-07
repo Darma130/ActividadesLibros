@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends Campaign</title>
+    <link rel="stylesheet" href="styles/my_style.css">
+</head>
+<body>
+    <div id="clickMe">Show Me the Furry Friend of the Day</div>
+    <div id="picframe">
+        <img src="images/furry_friend.jpg">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //añadimos una funcion que se ejecuta cuando el documento este listo
+        $(document).ready(function(){
+
+            $("#clickMe").click(function() {
+                //ejecutamos la funcion fadeIn que se aplica al elemento "img"
+                $("img").fadeIn(1000);
+                $("#picframe").slideToggle("slow");
+
+
+            });
+        });
+    </script>
+</body>
+</html>
